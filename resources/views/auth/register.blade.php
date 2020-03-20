@@ -18,7 +18,7 @@
                                 <input id="Firstname" type="text" class="form-control @error('Firstname') is-invalid @enderror" name="Firstname" value="{{ old('Firstname') }}" required autocomplete="Firstname" autofocus>
 
                                 @error('Firstname')
-                                    <span class="invalid-feedback" role="alert">
+                                    <span class="badge badge-warning" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
@@ -32,7 +32,7 @@
                                 <input id="Middlename" type="text" class="form-control @error('Middlename') is-invalid @enderror" name="Middlename" value="{{ old('Middlename') }}" placeholder="Optionally">
 
                                 @error('Middlename')
-                                    <span class="invalid-feedback" role="alert">
+                                    <span class="badge badge-warning" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
@@ -47,7 +47,7 @@
                                 <input id="lastname" type="text" class="form-control @error('lastname') is-invalid @enderror" name="lastname" value="{{ old('lastname') }}" required autocomplete="lastname" autofocus>
 
                                 @error('lastname')
-                                    <span class="invalid-feedback" role="alert">
+                                    <span class="badge badge-warning" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
@@ -61,7 +61,7 @@
                                 <input id="Mobile" type="number" class="form-control @error('Mobile') is-invalid @enderror" name="Mobile" value="{{ old('Mobile') }}" required autocomplete="Mobile" autofocus>
 
                                 @error('Mobile')
-                                    <span class="invalid-feedback" role="alert">
+                                    <span class="badge badge-warning" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
@@ -74,7 +74,7 @@
                                 <input id="Phone" type="number" class="form-control @error('Phone') is-invalid @enderror" name="Phone" value="{{ old('Phone') }}" placeholder="Optionally">
 
                                 @error('Phone')
-                                    <span class="invalid-feedback" role="alert">
+                                    <span class="badge badge-warning" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
@@ -88,7 +88,7 @@
                                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
 
                                 @error('email')
-                                    <span class="invalid-feedback" role="alert">
+                                    <span class="badge badge-warning" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
@@ -102,7 +102,7 @@
                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
 
                                 @error('password')
-                                    <span class="invalid-feedback" role="alert">
+                                    <span class="badge badge-warning" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror

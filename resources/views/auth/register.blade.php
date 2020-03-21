@@ -29,14 +29,15 @@
                    
                     
 
-                    <form class="form-group text-center">
+                    <form class="form-group text-center" action="{{route('register') }}" method="post">
+                        @csrf
                         <div class="row">
                             <div class="col-lg-6">
                                 <label>First Name:</label>
                                 <input id="Firstname" type="text" class="form-control @error('Firstname') is-invalid @enderror" name="Firstname" value="{{ old('Firstname') }}" required autocomplete="Firstname" autofocus placeholder="Enter Your First Name..">
 
                                 @error('Firstname')
-                                    <span class="invalid-feedback" role="alert">
+                                    <span class="badge badge-primary" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
@@ -46,7 +47,7 @@
                                 <input id="Middlename" type="text" class="form-control @error('Middlename') is-invalid @enderror" name="Middlename" value="{{ old('Middlename') }}" required autocomplete="Middlename" autofocus placeholder="Enter Your Middle Name..">
 
                                 @error('Middlename')
-                                    <span class="invalid-feedback" role="alert">
+                                    <span class="badge badge-primary" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
@@ -58,7 +59,7 @@
                                 <input id="lastname" type="text" class="form-control @error('lastname') is-invalid @enderror" name="lastname" value="{{ old('lastname') }}" required autocomplete="lastname" autofocus placeholder="Enter Your Last Name..">
 
                                 @error('lastname')
-                                    <span class="invalid-feedback" role="alert">
+                                    <span class="badge badge-primary" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
@@ -70,7 +71,7 @@
                                 <input id="Mobile" type="number" class="form-control @error('Mobile') is-invalid @enderror" name="Mobile" value="{{ old('Mobile') }}" required autocomplete="Mobile" placeholder="Optionally">
 
                                 @error('Mobile')
-                                    <span class="invalid-feedback" role="alert">
+                                    <span class="badge badge-primary" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
@@ -81,7 +82,7 @@
                                 <label>Phone Number</label>
                                <input id="Phone" type="number" class="form-control @error('Phone') is-invalid @enderror" name="Phone" value="{{ old('Phone') }}" required autocomplete="Mobile" placeholder="Optionally">
                                @error('Phone')
-                                  <span class="invalid-feedback" role="alert">
+                                  <span class="badge badge-primary" role="alert">
                                       <strong>{{ $message }}</strong>
                                   </span>
                               @enderror 
@@ -92,7 +93,7 @@
                                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" placeholder="Enter Your E-mail">
 
                                 @error('email')
-                                    <span class="invalid-feedback" role="alert">
+                                    <span class="badge badge-primary" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
@@ -105,7 +106,7 @@
                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password" placeholder="Enter Your Password">
 
                                 @error('password')
-                                    <span class="invalid-feedback" role="alert">
+                                    <span class="badge badge-primary" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror

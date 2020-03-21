@@ -2,6 +2,24 @@
 
 @section('content')
 <title>Registration</title>
+<style type="text/css">
+    body{
+        background-image: url(pharmacy.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+    #ui{
+        background-color: #333;
+        padding: 30px;
+        margin-top: 50px;
+        border-radius: 10px;
+        opacity: 0.9;
+    }
+    #ui label,h1{
+        color: #fff;
+    }
+</style>
 <div class="container">
         <div class="row">
             <div class="col-lg-3"></div>
@@ -37,9 +55,9 @@
 
                             
                                 <label>Last Name:</label> 
-                                <input id="Lastname" type="text" class="form-control @error('Lastname') is-invalid @enderror" name="Lastname" value="{{ old('Lastname') }}" required autocomplete="Lastname" autofocus placeholder="Enter Your Last Name..">
+                                <input id="lastname" type="text" class="form-control @error('lastname') is-invalid @enderror" name="lastname" value="{{ old('lastname') }}" required autocomplete="lastname" autofocus placeholder="Enter Your Last Name..">
 
-                                @error('Lastname')
+                                @error('lastname')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>

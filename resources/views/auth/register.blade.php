@@ -118,7 +118,8 @@
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password" placeholder="Re-Enter Password">
                             </div>
                         </div><br> <br>
-                            <select class="form-control">
+                            
+                            <select class="form-control" >
                             <option>Choose Gender</option>
                             <option>Male</option>
                             <option>Female</option>

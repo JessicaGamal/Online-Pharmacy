@@ -20,3 +20,21 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+
+Route::group(['middleware'=>['web','auth']],function(){
+
+	Route::get('/', function () {
+    return view('welcome');
+    });
+    Route::get('/home',function(){
+    	if(Auth::user()->admin ==0){
+    		return view('HOME');
+    		    	}
+    		    	else{
+    		    		$users['users']=\App\user::all();
+    		    		return view('welcome',$users);
+    		    	}
+    });
+    });

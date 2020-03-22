@@ -26,8 +26,8 @@
             <div class="col-lg-6">
                 <div id="ui">
                      <h1 class="text-center">Registration Form</h1>
-                   
-                    
+
+
 
                     <form class="form-group text-center" action="{{route('register') }}" method="post">
                         @csrf
@@ -44,7 +44,7 @@
                             </div> <br>
                             <div class="col-lg-6">
                                 <label>Middle Name:</label>
-                                <input id="Middlename" type="text" class="form-control @error('Middlename') is-invalid @enderror" name="Middlename" value="{{ old('Middlename') }}" required autocomplete="Middlename" autofocus placeholder="Enter Your Middle Name..">
+                                <input id="Middlename" type="text" class="form-control @error('Middlename') is-invalid @enderror" name="Middlename" value="{{ old('Middlename') }}" required autocomplete="Middlename" autofocus placeholder="Optionally">
 
                                 @error('Middlename')
                                     <span class="badge badge-primary" role="alert">
@@ -52,10 +52,10 @@
                                     </span>
                                 @enderror
                             </div>
-                            </div> <br>                        
+                            </div> <br>
 
-                            
-                                <label>Last Name:</label> 
+
+                                <label>Last Name:</label>
                                 <input id="lastname" type="text" class="form-control @error('lastname') is-invalid @enderror" name="lastname" value="{{ old('lastname') }}" required autocomplete="lastname" autofocus placeholder="Enter Your Last Name..">
 
                                 @error('lastname')
@@ -68,7 +68,7 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <label>Mobile</label>
-                                <input id="Mobile" type="number" class="form-control @error('Mobile') is-invalid @enderror" name="Mobile" value="{{ old('Mobile') }}" required autocomplete="Mobile" placeholder="Optionally">
+                                <input id="Mobile" type="number" class="form-control @error('Mobile') is-invalid @enderror" name="Mobile" value="{{ old('Mobile') }}" required autocomplete="Mobile" placeholder="Enter Your Mobile">
 
                                 @error('Mobile')
                                     <span class="badge badge-primary" role="alert">
@@ -76,7 +76,7 @@
                                     </span>
                                 @enderror
                             </div><br>
-                        
+
 
                             <div class="col-lg-6">
                                 <label>Phone Number</label>
@@ -85,7 +85,7 @@
                                   <span class="badge badge-primary" role="alert">
                                       <strong>{{ $message }}</strong>
                                   </span>
-                              @enderror 
+                              @enderror
                             </div>
                         </div><br>
 
@@ -98,7 +98,7 @@
                                     </span>
                                 @enderror
                             <br>
-                        
+
 
                         <div class="row">
                             <div class="col-lg-6">
@@ -111,23 +111,23 @@
                                     </span>
                                 @enderror
                             </div>
-                        
+
 
                             <div class="col-lg-6">
                                 <label>Re-type Password:</label>
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password" placeholder="Re-Enter Password">
                             </div>
                         </div><br> <br>
-                            
+
                             <select class="form-control" >
                             <option>Choose Gender</option>
                             <option>Male</option>
                             <option>Female</option>
-                            
+
                         </select>
                         <br>
                         <input type="submit" name="submit" value="submit" class="btn btn-primary btn-block btn-lg">
-                                    
+
            </form>
        </div>
    </div>

@@ -14,27 +14,21 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome'); });
+  Auth::Routes();
+  Route::get('/home', 'HomeController@index')->name('home');
+    /*
+
+//Login Routes
+Route::get('login', 'Auth\loginController@showLoginForm')->name('login');
+Route::post('login', 'Auth\loginController@login');
+Route::get('logout', 'Auth\LoginController@logout')->name('logout');
+//Register Routes
+Route::get('register', 'Auth\RegisterController@showRegistrationForm')->name('register');
+Route::post('register', 'Auth\RegisterController@register');
+
+//Admin midlleware
+Route::group(['Middleware' => ['checkadmin']] ,function () {
+      //Admin Functions will be here
 });
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-
-
-Route::group(['middleware'=>['web','auth']],function(){
-
-	Route::get('/', function () {
-    return view('welcome');
-    });
-    Route::get('/home',function(){
-    	if(Auth::user()->admin ==0){
-    		return view('HOME');
-    		    	}
-    		    	else{
-    		    		$users['users']=\App\user::all();
-    		    		return view('welcome',$users);
-    		    	}
-    });
-    });
+*/

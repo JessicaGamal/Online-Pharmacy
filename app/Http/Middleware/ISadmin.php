@@ -1,9 +1,9 @@
 <?php
 
 namespace App\Http\Middleware;
-
+use Illuminate\Support\Facades\Route;
 use Closure;
-
+use Auth ;
 class ISadmin
 {
     /**
@@ -16,11 +16,13 @@ class ISadmin
     public function handle($request, Closure $next)
         {
 
-        if(auth()->check()&&$request->user()->admin ==0){
-            return redirect()->guest('home');
-        
+        if(auth()->check()&&$request->user()->admin == 0){
+
+          Auth::Logout();
+          return redirect('/') ;
+
     }
-    
+
         return $next($request);
     }
 }

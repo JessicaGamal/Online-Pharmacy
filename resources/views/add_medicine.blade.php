@@ -112,7 +112,7 @@
 	.column{
 	/*background:#000;*/
 	display:table-cell;
-	padding:5px;
+	padding:7px;
 	width:33.3%;
 	/*color:#fff;*/
 	text-align:center;
@@ -120,8 +120,50 @@
 	border-right:10px solid #fff;
 	border-left:10px solid #fff;
 	}
+	
+	
+	table{
+	width:700px;
+	margin-bottom:50px;
+	font-family:arial , sans-serif;
+	}
+	
+	caption{
+	text-align:left;
+	}
+	
+	th{
+	text-align:left; /*center*/
+	background-color:#808080;
+	font-weight:bold;
+	/*text-transform:uppercase;*/
+	}
+	
+	td{
+	text-align:left;/*center*/
+	background-color:#D3D3D3;
+	}
+	
+	table,th,td{
+	border:1px solid #000;
+	border-collapse:collapse;
+	}
+	
+	th,td{
+	padding:5px;  //make word have space to boarder
+	}
+	
+	caption{
+	padding:6px;
+	font-weight:bold;
+	text-transform:uppercase;
+	
+	}
+	
   
     </style>
+	
+	
 </head>
 
 <body>
@@ -142,8 +184,9 @@
      </div>
 	 <div class='button1'>
 	  <a href='#add' class='btn1' >Add New Medicine</a>
-	  <!--<a href='#' class='btn1' >Show All Medicines</a>-->
+	  <a href='#all' class='btn1' >Show All Medicines</a>
 	 </div>
+	 
      
     </header>
 	
@@ -156,7 +199,7 @@
 		    </div>
 			
 			<div class='column'>
-			<h4>price</h4>
+			<h4>Price</h4>
 		    </div>
 			
 			 <div class='column'>
@@ -170,11 +213,11 @@
 		    </div>
 			
 			<div class='column'>
-			<input type="number" >
+			<input type="number" min="1" >
 		    </div>
 			
 			 <div class='column'>
-			<input type="number" >
+			<input type="number" min="1" >
 		    </div>
      	   </div>
 
@@ -191,11 +234,52 @@
 	</section>
 	
 	
+	
+	<section id=all>
+	  <div class='container'>
+	   <!-- <h3>name of all medicines</h3> -->
+	    <table>
+		 <caption > name of all medicines</caption>
+		 
+	       <tr>		   
+		    <th>Name Of Medicine</th>
+			<th>Price</th>
+			<th>Quantity</th>	   
+           </tr>
+		   
+		   <tr>  
+		    <td>a</td>
+			<td>150</td>
+			<td>2</td>	   
+           </tr>	   
+		  
+		   <tr>  
+		    <td>xyx</td>
+			<td>200</td>
+			<td>7</td>	   
+           </tr>
+		   
+		   <tr>  
+		    <td>dfg</td>
+			<td>20</td>
+			<td>10</td>	   
+           </tr>
+		   
+		   <tr>  
+		    <td>klm</td>
+			<td>20</td>
+			<td>10</td>	   
+           </tr>
+		   
+	    </table>
+	  </div>	
+	</section>
+	
+	
 
 
             
-        </div>		
-	</section>
+ 
 	
 	
 	

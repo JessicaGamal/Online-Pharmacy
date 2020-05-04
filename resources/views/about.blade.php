@@ -39,10 +39,10 @@
           <div class="main-nav d-none d-lg-block">
             <nav class="site-navigation text-right text-md-center" role="navigation">
               <ul class="site-menu js-clone-nav d-none d-lg-block">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="home1">Home</a></li>
                 <li><a href="shop.html">Store</a></li>
-                <li class="active"><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li class="active"><a href="about">About</a></li>
+                <li><a href="contact">Contact</a></li>
               </ul>
             </nav>
           </div>
@@ -59,7 +59,7 @@
       </div>
     </div>
 
-    <div class="site-blocks-cover inner-page" style="background-image: url('images/hero_1.jpg');">
+    <div class="site-blocks-cover inner-page" style="background-image: url('hero_1.jpg');">
       <div class="container">
         <div class="row">
           <div class="col-lg-7 mx-auto align-self-center">

@@ -23,9 +23,22 @@ Route::get('login', function()
 {
     return view('login'); });
 
+Route::get('about', function()
+{
+    return view('about'); });
+
+Route::get('contact', function()
+{
+    return view('contact'); });
+
 Route::get('FirstHome', function()
 {
     return view('FirstHome'); });
+
+Route::get('home1', function()
+{
+    return view('FirstHome'); });
+
   Auth::Routes();
   Route::get('/home', 'HomeController@index')->name('home');
     /*

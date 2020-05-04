@@ -15,12 +15,12 @@
 
 			<!-- Header -->
 				<header id="header" class="alt">
-					<h1><a href="home1">CARING PHARMACY</a></h1>
+					<h1>CARING PHARMACY</h1>
 					<nav id="nav">
 						<ul>
 							<li><a href="home1">Home</a></li>							
-							<li><a href="generic.html">about us</a></li>
-							<li><a href="contact.html">Contact us</a></li>
+							<li><a href="about">about us</a></li>
+							<li><a href="contact">Contact us</a></li>
 									
 								
 						

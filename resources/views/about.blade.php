@@ -6,14 +6,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="https://fonts.googleapis.com/css?family=Rubik:400,700|Crimson+Text:400,400i" rel="stylesheet">
-  <link rel="stylesheet" href="fonts/icomoon/style3.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/magnific-popup.css">
-  <link rel="stylesheet" href="css/jquery-ui.css">
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="css/aos.css">
-  <link rel="stylesheet" href="css/style3.css">
+  <link rel="stylesheet" href="icomoon/style3.css">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="magnific-popup.css">
+  <link rel="stylesheet" href="jquery-ui.css">
+  <link rel="stylesheet" href="owl.carousel.min.css">
+  <link rel="stylesheet" href="owl.theme.default.min.css">
+  <link rel="stylesheet" href="aos.css">
+  <link rel="stylesheet" href="style3.css">
 </head>
 
 <body>
@@ -78,7 +78,7 @@
           <div class="col-md-6">
             <div class="block-16">
               <figure>
-                <img src="images/bg_1.jpg" alt="Image placeholder" class="img-fluid rounded">
+                <img src="bg_1.jpg" alt="Image placeholder" class="img-fluid rounded">
               </figure>
             </div>
           </div>
@@ -100,7 +100,7 @@
           <div class="col-md-6 order-md-2">
             <div class="block-16">
               <figure>
-                <img src="images/hero_1.jpg" alt="Image placeholder" class="img-fluid rounded">
+                <img src="hero_1.jpg" alt="Image placeholder" class="img-fluid rounded">
               </figure>
             </div>
           </div>
@@ -163,7 +163,7 @@
             <div class="block-38 text-center">
               <div class="block-38-img">
                 <div class="block-38-header">
-                  <img src="images/person_1.jpg" alt="Image placeholder" class="mb-4">
+                  <img src="person_1.jpg" alt="Image placeholder" class="mb-4">
                   <h3 class="block-38-heading h4">Jessica Gamal</h3>
                   <p class="block-38-subheading">CEO/Co-Founder</p>
                 </div>
@@ -177,7 +177,7 @@
             <div class="block-38 text-center">
               <div class="block-38-img">
                 <div class="block-38-header">
-                  <img src="images/person_2.jpg" alt="Image placeholder" class="mb-4">
+                  <img src="person_2.jpg" alt="Image placeholder" class="mb-4">
                   <h3 class="block-38-heading h4">Beshoy Osama</h3>
                   <p class="block-38-subheading">Co-Founder</p>
                 </div>
@@ -191,7 +191,7 @@
             <div class="block-38 text-center">
               <div class="block-38-img">
                 <div class="block-38-header">
-                  <img src="images/person_3.jpg" alt="Image placeholder" class="mb-4">
+                  <img src="person_3.jpg" alt="Image placeholder" class="mb-4">
                   <h3 class="block-38-heading h4">Abanoub Youssef</h3>
                   <p class="block-38-subheading">Marketing</p>
                 </div>
@@ -205,7 +205,7 @@
             <div class="block-38 text-center">
               <div class="block-38-img">
                 <div class="block-38-header">
-                  <img src="images/person_4.jpg" alt="Image placeholder" class="mb-4">
+                  <img src="person_4.jpg" alt="Image placeholder" class="mb-4">
                   <h3 class="block-38-heading h4">Sara Hussein</h3>
                   <p class="block-38-subheading">Sales Manager</p>
                 </div>
@@ -219,7 +219,7 @@
             <div class="block-38 text-center">
               <div class="block-38-img">
                 <div class="block-38-header">
-                  <img src="images/person_5.jpg" alt="Image placeholder" class="mb-4">
+                  <img src="person_5.jpg" alt="Image placeholder" class="mb-4">
                   <h3 class="block-38-heading h4">Engy Ghatas</h3>
                   <p class="block-38-subheading">Social Media</p>
                 </div>
@@ -233,7 +233,7 @@
             <div class="block-38 text-center">
               <div class="block-38-img">
                 <div class="block-38-header">
-                  <img src="images/person_6.jpg" alt="Image placeholder" class="mb-4">
+                  <img src="person_6.jpg" alt="Image placeholder" class="mb-4">
                   <h3 class="block-38-heading h4">Mehraiel Mina</h3>
                   <p class="block-38-subheading">Social Media Assistant</p>
                 </div>
@@ -274,13 +274,13 @@
       </div>
     </footer>
   </div>
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/jquery-ui.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/main.js"></script>
+  <script src="jquery-3.3.1.min.js"></script>
+  <script src="jquery-ui.js"></script>
+  <script src="popper.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+  <script src="owl.carousel.min.js"></script>
+  <script src="jquery.magnific-popup.min.js"></script>
+  <script src="aos.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>

@@ -173,10 +173,10 @@
 		  <h2>PHARMACY<h2>
 	    </div>
 	   <ul>
-	      <li><a href='#'>HOME</a></li>
+	      <li><a href='home1'>HOME</a></li>
 		  <li><a href='#'>SERVICES</a></li>
-		  <li><a href='#'>ABOUT</a></li>
-		  <li><a href='#'>CONTACT</a></li>
+		  <li><a href='about'>ABOUT</a></li>
+		  <li><a href='contact'>CONTACT</a></li>
 	   </ul>
 	 </div>
 	 <div class='title'>

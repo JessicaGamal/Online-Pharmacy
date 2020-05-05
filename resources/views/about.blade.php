@@ -265,7 +265,7 @@
               <ul class="list-unstyled">
                 <li class="address">203 Dokki St , Giza</li>
                 <li class="phone"><a href="tel://11119">11119</a></li>
-                <li class="email">Pharma@gmail.com</li>
+                <li class="email">Online Pharmacy@gmail.com</li>
               </ul>
             </div>
           </div>

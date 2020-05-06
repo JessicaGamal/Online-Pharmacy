@@ -44,7 +44,7 @@
                             </div> <br>
                             <div class="col-lg-6">
                                 <label>Middle Name:</label>
-                                <input id="Middlename" type="text" class="form-control @error('Middlename') is-invalid @enderror" name="Middlename" value="{{ old('Middlename') }}" required autocomplete="Middlename" autofocus placeholder="Optionally">
+                                <input id="Middlename" type="text" class="form-control @error('Middlename') is-invalid @enderror" name="Middlename" value="{{ old('Middlename') }}" autofocus placeholder="Optionally">
 
                                 @error('Middlename')
                                     <span class="badge badge-primary" role="alert">
@@ -80,7 +80,7 @@
 
                             <div class="col-lg-6">
                                 <label>Phone Number</label>
-                               <input id="Phone" type="number" class="form-control @error('Phone') is-invalid @enderror" name="Phone" value="{{ old('Phone') }}" required autocomplete="Mobile" placeholder="Optionally">
+                               <input id="Phone" type="number" class="form-control @error('Phone') is-invalid @enderror" name="Phone" value="{{ old('Phone') }}"  placeholder="Optionally">
                                @error('Phone')
                                   <span class="badge badge-primary" role="alert">
                                       <strong>{{ $message }}</strong>

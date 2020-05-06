@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Online Pharmacy</title>
+  <title>Caring Pharmacy</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -42,16 +42,16 @@
         <div class="d-flex align-items-center justify-content-between">
           <div class="logo">
             <div class="site-logo">
-              <a href="index.html" class="js-logo-clone">Online Pharmacy</a>
+              <a href="index.html" class="js-logo-clone">Caring Pharmacy</a>
             </div>
           </div>
           <div class="main-nav d-none d-lg-block">
             <nav class="site-navigation text-right text-md-center" role="navigation">
               <ul class="site-menu js-clone-nav d-none d-lg-block">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="shop.html">Store</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href='home1'>HOME</a></li>
+            
+                <li><a href="about">ABOUT US</a></li>
+                
               </ul>
             </nav>
           </div>

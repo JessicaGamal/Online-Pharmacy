@@ -174,9 +174,8 @@
 	    </div>
 	   <ul>
 	      <li><a href='home1'>HOME</a></li>
-		  <li><a href='#'>SERVICES</a></li>
-		  <li><a href='about'>ABOUT</a></li>
-		  <li><a href='contact'>CONTACT</a></li>
+		  <li><a href='about'>ABOUT US</a></li>
+		  
 	   </ul>
 	 </div>
 	 <div class='title'>

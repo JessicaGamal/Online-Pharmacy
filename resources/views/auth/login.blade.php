@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-
+<title>Registration</title>
          <link href="style.css" rel="stylesheet">
 
          <div class="c">

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Online Pharmacy</title>
+  <title>Caring Pharmacy</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="https://fonts.googleapis.com/css?family=Rubik:400,700|Crimson+Text:400,400i" rel="stylesheet">
@@ -33,16 +33,16 @@
         <div class="d-flex align-items-center justify-content-between">
           <div class="logo">
             <div class="site-logo">
-              <a href="index.html" class="js-logo-clone">Online Pharmacy</a>
+              <a href="index.html" class="js-logo-clone">Caring Pharmacy</a>
             </div>
           </div>
           <div class="main-nav d-none d-lg-block">
             <nav class="site-navigation text-right text-md-center" role="navigation">
               <ul class="site-menu js-clone-nav d-none d-lg-block">
                 <li><a href="home1">Home</a></li>
-                <li><a href="shop.html">Store</a></li>
+               
                 <li class="active"><a href="about">About</a></li>
-                <li><a href="contact">Contact</a></li>
+                
               </ul>
             </nav>
           </div>
@@ -65,7 +65,7 @@
           <div class="col-lg-7 mx-auto align-self-center">
             <div class=" text-center">
               <h1>About Us</h1>
-              <p>Hey You We Are Here For You Trust Of Our Team.</p>ˀ
+              <p>Hey You..! We Are Here For You Trust Of Our Team.</p>ˀ
             </div>
           </div>
         </div>

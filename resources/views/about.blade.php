@@ -40,9 +40,9 @@
             <nav class="site-navigation text-right text-md-center" role="navigation">
               <ul class="site-menu js-clone-nav d-none d-lg-block">
                 <li><a href="home1">Home</a></li>
-               
+
                 <li class="active"><a href="about">About</a></li>
-                
+
               </ul>
             </nav>
           </div>
@@ -89,7 +89,7 @@
             </div>
             <p>About team.</p>
             <p>Information about Us.</p>
-    
+
           </div>
         </div>
       </div>
@@ -104,18 +104,18 @@
               </figure>
             </div>
           </div>
-          <div class="col-md-5 mr-auto">  
+          <div class="col-md-5 mr-auto">
             <div class="site-section-heading pt-3 mb-4">
               <h2 class="text-black">We Are Trusted Company</h2>
             </div>
             <p class="text-black">about us.</p>
             <p class="text-black">Information about us.</p>
-    
+
           </div>
         </div>
       </div>
     </div>
-    
+
     <div class="site-section site-section-sm site-blocks-1 border-0" data-aos="fade">
       <div class="container">
         <div class="row">
@@ -149,7 +149,7 @@
         </div>
       </div>
     </div>
-    
+
     <div class="site-section bg-light custom-border-bottom" data-aos="fade">
       <div class="container">
         <div class="row justify-content-center mb-5">
@@ -159,7 +159,7 @@
         </div>
         <div class="row">
           <div class="col-md-6 col-lg-6 mb-5">
-    
+
             <div class="block-38 text-center">
               <div class="block-38-img">
                 <div class="block-38-header">

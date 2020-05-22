@@ -25,4 +25,13 @@ class ProductController extends Controller
         return redirect('/products');
 
     }
+
+    public function destroy( $id)
+    {
+        $request=post::find($id);
+        $request->delete();
+        return redirect('/products')->with('success','products removed');
+
+
+    }
 }

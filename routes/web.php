@@ -46,6 +46,8 @@ Route::get('home1', function()
 Route::post('/products','ProductController@store');
 Route::get('/products','ProductController@index');
 
+Route::delete('/products','ProductController@destroy');
+
     /*
 
 //Login Routes

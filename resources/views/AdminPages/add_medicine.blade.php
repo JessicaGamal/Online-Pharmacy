@@ -122,6 +122,19 @@
 	}
 	
 	
+	.picture{
+	/*background:#000;*/
+	display:table-cell;
+	padding:7px;
+	width:33.3%;
+	/*color:#fff;*/
+	text-align:center;
+	vertical-align:middle;
+	border-right:60px solid #fff;
+	border-left:20px solid #fff;
+	}
+	
+	
 	table{
 	width:700px;
 	margin-bottom:50px;
@@ -184,6 +197,7 @@
 	 <div class='button1'>
 	  <a href='#add' class='btn1' >Add New Medicine</a>
 	  <a href='#all' class='btn1' >Show All Medicines</a>
+	  <a href="delete_medicine.blade.php" class='btn1' >delete Medicine</a>
 	 </div>
 	 
      
@@ -202,7 +216,7 @@
 		    </div>
 			
 			 <div class='column'>
-			<h4>Quantity</h4>
+			<h4>Image</h4>
 		    </div>
      	   </div>
 		   
@@ -215,8 +229,8 @@
 			<input type="number" min="1" >
 		    </div>
 			
-			 <div class='column'>
-			<input type="number" min="1" >
+			 <div class='picture'>
+			<input type="file" id="image" name="image" >
 		    </div>
      	   </div>
 
@@ -243,31 +257,31 @@
 	       <tr>		   
 		    <th>Name Of Medicine</th>
 			<th>Price</th>
-			<th>Quantity</th>	   
+			<th>Image</th>	   
            </tr>
 		   
 		   <tr>  
-		    <td>a</td>
-			<td>150</td>
-			<td>2</td>	   
+		    <td></td>
+			<td></td>
+			<td></td>	   
            </tr>	   
 		  
 		   <tr>  
-		    <td>xyx</td>
-			<td>200</td>
-			<td>7</td>	   
+		    <td></td>
+			<td></td>
+			<td></td>	   
            </tr>
 		   
 		   <tr>  
-		    <td>dfg</td>
-			<td>20</td>
-			<td>10</td>	   
+		    <td></td>
+			<td></td>
+			<td></td>	   
            </tr>
 		   
 		   <tr>  
-		    <td>klm</td>
-			<td>20</td>
-			<td>10</td>	   
+		    <td></td>
+			<td></td>
+			<td></td>	   
            </tr>
 		   
 	    </table>

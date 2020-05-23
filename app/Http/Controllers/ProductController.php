@@ -28,7 +28,7 @@ class ProductController extends Controller
 
     public function destroy( $id)
     {
-        $request=post::find($id);
+        $request=request::find($id);
         $request->delete();
         return redirect('/products')->with('success','products removed');
 

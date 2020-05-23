@@ -197,7 +197,7 @@
      </div>
 	 <div class='button1'>
 	  <a href='#del' class='btn1' >Delete Medicine</a>
-	 <a href="add new medicine.html" class='btn1' >Add Medicines</a>
+	 <a href="add_medicine.blade.php" class='btn1' >Add Medicines</a>
 	 </div>
 	 
      
@@ -216,46 +216,32 @@
 	       <tr>		   
 		    <th>Name Of Medicine</th>
 			<th>Price</th>
-			<th>Quantity</th>
+			<th>Image Of Medicine</th>
             <th>Delete Medicine</th>			
            </tr>
 		   
+		   @foreach($product as $row)
 		   <tr>  
-		    <td>a</td>
-			<td>150</td>
-			<td>2</td>	   
-            <td><button class=btn3> delete</button></td>          
-		  </tr>	   
-		  
-		   <tr>  
-		    <td>xyx</td>
-			<td>200</td>
-			<td>7</td>
-            <td><button class=btn3> delete</button></td>			
-           </tr>
+		   <td>{{[$row['Product_name']]}}</td>
+		   <td>{{[$row['image']]}}</td>
+		   <td>{{[$row['Price']]}}</td>
+            <td>
+			    <form method="post" class="delete_form" action="{{action('ProductController@destroy',$row['id'])}}" >
+				   {{csrf_field()}}
+				   <input type="hidden" name="_method" value="DELETE" >
+				   <button type="submit" class=btn3 > Delete</button>			   
+			    </form>
+			</td>			          
+		  </tr>
+
+          @endforeach		  
 		   
-		   <tr>  
-		    <td>dfg</td>
-			<td>20</td>
-			<td>10</td>	
-            <td><button class=btn3> delete</button></td>			
-           </tr>
-		   
-		   <tr>  
-		    <td>klm</td>
-			<td>20</td>
-			<td>10</td>	
-            <td><button class=btn3> delete</button></td>			
-           </tr>
+
 		   
 		   
 	    </table>
 	  </div>	
 	</section>
-	
-	
-
-
             
  
 	

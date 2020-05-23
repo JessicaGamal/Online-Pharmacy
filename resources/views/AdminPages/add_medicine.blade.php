@@ -204,7 +204,8 @@
     </header>
 	
 	<section id=add>	
-	    <div class='container' >
+	  <div class='container' >
+		<form method="post" action="{{url('Product')}}" >
 		  <h3>ADD MEDICINE</h3>
 		  <div class='row'>		  
 		    <div class='column'>
@@ -222,11 +223,11 @@
 		   
 		   <div class='row'>
 		    <div class='column'>
-			 <input type="text" >
+			 <input type="text" name="medicine" placeholder="Enter Medicine Name" >
 		    </div>
 			
 			<div class='column'>
-			<input type="number" min="1" >
+			<input type="number" min="1" name="price" placeholder="Enter Medicine Price" >
 		    </div>
 			
 			 <div class='picture'>
@@ -240,10 +241,10 @@
 				 <button class='btn2'>
 				     submit
 				 </button> 
-				 </input>
 		     </div>
 			</div>
-        </div>		
+		</form>	
+      </div>		
 	</section>
 	
 	
@@ -260,39 +261,21 @@
 			<th>Image</th>	   
            </tr>
 		   
+		   @foreach($products as $row) 
 		   <tr>  
-		    <td></td>
-			<td></td>
-			<td></td>	   
-           </tr>	   
+		   <td>{{$row['medicine']}}</td>
+			<td>{{$row['price']}}</td>
+			<td>{{$row['image']}}</td>	   
+		   </tr>
+		   @endforeach
+		   	   
 		  
-		   <tr>  
-		    <td></td>
-			<td></td>
-			<td></td>	   
-           </tr>
-		   
-		   <tr>  
-		    <td></td>
-			<td></td>
-			<td></td>	   
-           </tr>
-		   
-		   <tr>  
-		    <td></td>
-			<td></td>
-			<td></td>	   
-           </tr>
+
 		   
 	    </table>
 	  </div>	
 	</section>
-	
-	
 
-
-            
- 
 	
 	
 	

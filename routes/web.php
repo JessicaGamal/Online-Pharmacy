@@ -43,10 +43,10 @@ Route::get('home1', function()
   Auth::Routes();
   Route::get('/home', 'HomeController@index')->name('home');
 
-Route::post('/products','ProductController@store');
-Route::get('/products','ProductController@index');
+Route::post('product','ProductController@store');
+Route::get('product','ProductController@index');
 
-Route::delete('/products','ProductController@destroy');
+Route::delete('product','ProductController@destroy');
 
     /*
 

@@ -4,11 +4,21 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Product;
+
 class ProductController extends Controller
 {
     public function index()
     {
-        return view('AdminPages.Addmedicine');
+        $products = Product::all()->toArray();
+
+        return view('AdminPages.Addmedicine' , compact('products'));
+    }
+
+    public function create()
+    {
+
+       return view('AdminPages.Addmedicine');
+
     }
 
     public function store(Request $request)
@@ -19,12 +29,24 @@ class ProductController extends Controller
            'Price' => 'required|numeric',
 
         ]);
+        $product = new Product([
+            'medicine' => $request->get('medicine'),
+            'price' => $request->get('price'),
+            'image' => $request->get('image')
 
-        Product::create($request->all());
+        ]);
 
-        return redirect('/products');
+        $product->save();
 
-    }
+        return redirect()->route('AdminPages.Addmedicine')->with('success','medicines added');
+
+        }
+
+        
+
+        
+
+    
 
     public function destroy( $id)
     {

@@ -15,8 +15,11 @@ use Illuminate\Support\Facades\Route;
 
 //Route::get('/', function () {
   //  return view('FirstHome'); });
+
+Route::get ("/delete/{id}","ProductController@delete");
+Route::get('AdminPages.delete','ProductController@show');
 Route::get('/', function () {
-    return view('AdminPages.Add_medicine'); });
+    return view('AdminPages.delete'); });
 Route::get('register', function()
 {
     return view('register'); });

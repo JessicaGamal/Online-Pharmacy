@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <style>
-	table.blueTable {
+  table.blueTable {
   border: 1px solid #1C6EA4;
   background-color: #EEEEEE;
-  width: 100%;
+  width: 500px;
   text-align: left;
   border-collapse: collapse;
 }
@@ -13,7 +13,7 @@ table.blueTable td, table.blueTable th {
   padding: 3px 2px;
 }
 table.blueTable tbody td {
-  font-size: 13px;
+  font-size: 15px;
 }
 table.blueTable tr:nth-child(even) {
   background: #D0E4F5;
@@ -59,21 +59,22 @@ table.blueTable tfoot .links a{
   border-radius: 5px;
 }
 </style>
-
-    <table class="blueTable">
+  <body> 
+  <table class="blueTable">
 <thead>
 <tr>
-<th>productname</th>
+<th>Product_name</th>
 <th>price</th>
 <th>image</th>
 </tr>
 </thead>
 <tbody>
-   @foreach($delete as $row)
+   @foreach($products as $row)
 <tr>
 <td>{{$row->Product_name}}</td>
 <td>{{$row->price}}</td>
 <td>{{$row->image}}</td>
+
 <td><a href="/delete/{{$row->id}}"><button>delete</button></a></td>
 </tr>
   @endforeach

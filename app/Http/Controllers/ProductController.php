@@ -10,7 +10,8 @@ class ProductController extends Controller
 {
     public function index()
     {
-        return view ('AdminPages.Add_medicine');
+        
+        return view ('AdminPages.delete_medicine');
     }
 
     public function store(Request $request)
@@ -21,4 +22,18 @@ class ProductController extends Controller
         DB::insert('insert into products (id,Product_name,price,image) values (?,?,?,?)',[null,$Product_name,$price,$image]);
 
     }
+
+        public function show()
+      {
+        $products = DB::select('select * from products');
+         return view('/AdminPages.delete',['products'=>$products]);
+    }
+
+     public function delete($id)
+    {
+        DB::delete('delete from products where id = ?',[$id]);
+        return redirect('delete_medicine')->with('success','datadelete');
+    }
+
+        
 }

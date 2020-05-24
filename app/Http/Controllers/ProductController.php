@@ -7,11 +7,12 @@ use App\Product;
 
 class ProductController extends Controller
 {
+ 
     public function index()
     {
-        $products = Product::all()->toArray();
+        $product = product::all()->toArray();
 
-        return view('AdminPages.Addmedicine' , compact('products'));
+        return view('AdminPages.Addmedicine' , compact('product'));
     }
 
     public function create()
@@ -23,12 +24,13 @@ class ProductController extends Controller
 
     public function store(Request $request)
     {
-       $validatedData = $request->validate([
-           'Product_name' => 'required',
-           'image' => 'required',
-           'Price' => 'required|numeric',
+       $this->validate($request ,[
+           'medicine' => 'required',           
+           'price' => 'required|numeric',
+           'image' => 'required'
 
         ]);
+
         $product = new Product([
             'medicine' => $request->get('medicine'),
             'price' => $request->get('price'),
@@ -37,7 +39,6 @@ class ProductController extends Controller
         ]);
 
         $product->save();
-
         return redirect()->route('AdminPages.Addmedicine')->with('success','medicines added');
 
         }

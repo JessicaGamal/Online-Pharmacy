@@ -222,12 +222,11 @@
 		   
 		   @foreach($product as $row)
 		   <tr>  
-		   <td>{{[$row['Product_name']]}}</td>
-		   <td>{{[$row['image']]}}</td>
-		   <td>{{[$row['Price']]}}</td>
+		   <td>{{[$row['Product_name']}}</td>
+		   <td>{{[$row['image']}}</td>
+		   <td>{{[$row['Price']}}</td>
             <td>
 			    <form method="post" class="delete_form" action="{{action('ProductController@destroy',$row['id'])}}" >
-				   {{csrf_field()}}
 				   <input type="hidden" name="_method" value="DELETE" >
 				   <button type="submit" class=btn3 > Delete</button>			   
 			    </form>

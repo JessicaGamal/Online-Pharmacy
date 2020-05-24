@@ -205,7 +205,8 @@
 	
 	<section id=add>	
 	  <div class='container' >
-		<form method="post" action="{{url('Product')}}" >
+		<form method="post" action="{{url('product')}}" >
+			
 		  <h3>ADD MEDICINE</h3>
 		  <div class='row'>		  
 		    <div class='column'>
@@ -221,8 +222,8 @@
 		    </div>
      	   </div>
 		   
-		   <div class='row'>
-		    <div class='column'>
+		   <div class='row'>			
+		    <div class='column' >
 			 <input type="text" name="medicine" placeholder="Enter Medicine Name" >
 		    </div>
 			
@@ -234,8 +235,8 @@
 			<input type="file" id="image" name="image" >
 		    </div>
      	   </div>
-
-            <div class='row'>
+			
+            <div class='row' >
 		     <div class='column'>		   
 		         <div type='submit' class='button2' >
 				 <button class='btn2'>
@@ -261,7 +262,7 @@
 			<th>Image</th>	   
            </tr>
 		   
-		   @foreach($products as $row) 
+		   @foreach($product as $row) 
 		   <tr>  
 		   <td>{{$row['medicine']}}</td>
 			<td>{{$row['price']}}</td>

@@ -45,8 +45,11 @@ Route::get('home1', function()
 
 Route::post('product','ProductController@store');
 Route::get('product','ProductController@index');
+Route::get('product','ProductController@create');
 
 Route::delete('product','ProductController@destroy');
+
+Route::resource('product','ProductController');
 
     /*
 

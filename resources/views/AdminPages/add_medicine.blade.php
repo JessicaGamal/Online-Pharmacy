@@ -1,7 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
+
+
 <title>Add/Delete medicine</title>
+<head>
+    <link href="delete.css" rel="stylesheet">
+
+</head>
+  
 <style type="text/css">
     body{
     	background-image: url(3.jpg);
@@ -15,6 +22,9 @@
         color: #fff;
     }
     </style>
+
+               
+            
      <div class="row">
             <div class="col-lg-3"></div>
             <div class="col-lg-6">
@@ -48,4 +58,7 @@
 </div>
 	<button type="submit" class="btn btn-primary">submit</button>
 </form>
+
+</body>
+</html>
 @endsection

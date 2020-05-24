@@ -1,38 +1,17 @@
-<!DOCTYPE html>
-<html>
 
-   <head>
-    
-   
-     <link href="delete.css" rel="stylesheet">
-   
-   
+  @extends('layouts.app')
+
+@section('content')
+<head><head>
+    <link href="delete.css" rel="stylesheet">
+
+</head>
   </head>
 
-  <body> 
-<div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
+<title>Add/Delete medicine</title>
 
-
-               <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        logout                                    </a>
-                               
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        @csrf
-                                    </form>
-    
-              </div>
-                
-            
-              <!--<li><a href="register" class="button">Sign Up</a></li>-->
-            </ul>
-          </nav>
-        </header>
+  
+  <body>     
   <table class="blueTable">
 <thead>
 <tr>
@@ -57,3 +36,4 @@
 
 </body>
 </html>
+@endsection

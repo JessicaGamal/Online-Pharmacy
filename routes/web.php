@@ -13,9 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//Route::get('/', function () {
+  //  return view('FirstHome'); });
 Route::get('/', function () {
-    return view('FirstHome'); });
-
+    return view('AdminPages.Add_medicine'); });
 Route::get('register', function()
 {
     return view('register'); });
@@ -43,13 +44,10 @@ Route::get('home1', function()
   Auth::Routes();
   Route::get('/home', 'HomeController@index')->name('home');
 
-Route::post('product','ProductController@store');
-Route::get('product','ProductController@index');
-Route::get('product','ProductController@create');
+Route::post('/product','ProductController@store');
+Route::get('/product','ProductController@index');
 
-Route::delete('product','ProductController@destroy');
 
-Route::resource('product','ProductController');
 
     /*
 

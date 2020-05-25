@@ -55,6 +55,7 @@
               </ul>
             </nav>
           </div>
+
           <div class="icons">
             <a href="#" class="icons-btn d-inline-block js-search-open"><span class="icon-search"></span></a>
             <a href="cart.html" class="icons-btn d-inline-block bag">
@@ -89,86 +90,16 @@
         </div>
 
         <div class="row">
+       @foreach($prod as $p)
           <div class="col-sm-6 col-lg-4 text-center item mb-4">
             <span class="tag">Sale</span>
-            <a href="shop-single.html"> <img src="images/product_01.png" alt="Image"></a>
-            <h3 class="text-dark"><a href="shop-single.html">Bioderma</a></h3>
-            <p class="price"><del>95.00LE</del> &mdash; 55.00LE</p>
+            <a href="shop-single.html"><img src ="{{asset($p->image)}}" /></a>
+            <h3 class="text-dark"><a href="shop-single.html">{{$p->Product_name}}</a></h3>
+            <p class="price">{{$p->price}}</p>
             <p><a href="cart.html" class="buy-now btn btn-sm height-auto px-4 py-3 btn-primary">ADD TO CART</a></p>
           </div>
-          <div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <a href="shop-single.html"> <img src="images/product_02.png" alt="Image"></a>
-            <h3 class="text-dark"><a href="shop-single.html">Chanca Piedra</a></h3>
-            <p class="price">70.00LE</p>
-            <p><a href="cart.html" class="buy-now btn btn-sm height-auto px-4 py-3 btn-primary">ADD TO CART</a></p>
-          </div>
-          <div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <a href="shop-single.html"> <img src="images/product_03.png" alt="Image"></a>
-            <h3 class="text-dark"><a href="shop-single.html">Umcka Cold Care</a></h3>
-            <p class="price">120.00LE</p>
-            <p><a href="cart.html" class="buy-now btn btn-sm height-auto px-4 py-3 btn-primary">ADD TO CART</a></p>
-          </div>
-
-          <div class="col-sm-6 col-lg-4 text-center item mb-4">
-
-            <a href="shop-single.html"> <img src="images/product_04.png" alt="Image"></a>
-            <h3 class="text-dark"><a href="shop-single.html">Cetyl Pure</a></h3>
-            <p class="price"><del>45.00LE</del> &mdash; 20.00LE</p>
-            <p><a href="cart.html" class="buy-now btn btn-sm height-auto px-4 py-3 btn-primary">ADD TO CART</a></p>
-          </div>
-          <div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <a href="shop-single.html"> <img src="images/product_05.png" alt="Image"></a>
-            <h3 class="text-dark"><a href="shop-single.html">CLA Core</a></h3>
-            <p class="price">38.00LE</p>
-            <p><a href="cart.html" class="buy-now btn btn-sm height-auto px-4 py-3 btn-primary">ADD TO CART</a></p>
-          </div>
-          <div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <span class="tag">Sale</span>
-            <a href="shop-single.html"> <img src="images/product_06.png" alt="Image"></a>
-            <h3 class="text-dark"><a href="shop-single.html">Poo Pourri</a></h3>
-            <p class="price"><del>89LE</del> &mdash; 38.00LE</p>
-            <p><a href="cart.html" class="buy-now btn btn-sm height-auto px-4 py-3 btn-primary">ADD TO CART</a></p>
-          </div>
-        </div>
-      
-    </div>
-
-    
-    <div class="site-section bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="title-section text-center col-12">
-            <h2 class="text-uppercase">New Products</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 block-3 products-wrap">
-            <div class="nonloop-block-3 owl-carousel">
-
-              <div class="text-center item mb-4">
-                <a href="shop-single.html"> <img src="images/product_03.png" alt="Image"></a>
-                <h3 class="text-dark"><a href="shop-single.html">Umcka Cold Care</a></h3>
-                <p class="price">120.00LE</p>
-              </div>
-
-              <div class="text-center item mb-4">
-                <a href="shop-single.html"> <img src="images/product_01.png" alt="Image"></a>
-                <h3 class="text-dark"><a href="shop-single.html">Umcka Cold Care</a></h3>
-                <p class="price">120.00LE</p>
-              </div>
-
-              <div class="text-center item mb-4">
-                <a href="shop-single.html"> <img src="images/product_02.png" alt="Image"></a>
-                <h3 class="text-dark"><a href="shop-single.html">Umcka Cold Care</a></h3>
-                <p class="price">120.00LE</p>
-              </div>
-
-              <div class="text-center item mb-4">
-                <a href="shop-single.html"> <img src="images/product_04.png" alt="Image"></a>
-                <h3 class="text-dark"><a href="shop-single.html">Umcka Cold Care</a></h3>
-                <p class="price">120.00LE</p>
-              </div>
-
+          
+                 @endforeach
             </div>
           </div>
         </div>

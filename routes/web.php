@@ -49,6 +49,8 @@ Route::post('/product','ProductController@store');
 Route::get('/product','ProductController@index');
 Route::get ("/delete/{id}","productscontroller@delete");
 Route::get("AdminPages.delete","productscontroller@indeex");
+Route::get("UserPages.index","prodcontroller@index");
+
 
 
 

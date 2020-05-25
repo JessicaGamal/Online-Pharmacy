@@ -15,6 +15,9 @@ class productscontroller extends Controller
      	return view('AdminPages.delete',['products'=>$products]);
      }
 
+     
+
+
       public function delete($id)
     {
         DB::delete('delete from products where id = ?',[$id]);

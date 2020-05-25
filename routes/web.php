@@ -16,8 +16,8 @@ use Illuminate\Support\Facades\Route;
 //Route::get('/', function () {
   //  return view('FirstHome'); });
 
-Route::get ("/delete/{id}","ProductController@delete");
-Route::get('AdminPages.delete','ProductController@show');
+Route::get ("/delete/{id}","productscontroller@delete");
+Route::get("AdminPages.delete","productscontroller@indeex");
 Route::get('/', function () {
     return view('AdminPages.delete'); });
 Route::get('register', function()

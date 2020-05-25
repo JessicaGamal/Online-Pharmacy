@@ -1,6 +1,4 @@
-
-  @extends('layouts.app')
-
+   @extends('layouts.app')
 @section('content')
 <head><head>
     <link href="delete.css" rel="stylesheet">
@@ -15,21 +13,23 @@
   <table class="blueTable">
 <thead>
 <tr>
+
 <th>Product_name</th>
 <th>price</th>
 <th>image</th>
+<th>DELETE_BUTTON</th>
 </tr>
 </thead>
 <tbody>
-   @foreach($products as $row)
-<tr>
-<td>{{$row->Product_name}}</td>
-<td>{{$row->price}}</td>
-<td>{{$row->image}}</td>
+	@foreach($products as $prod)
+	<tr>
+	<th>{{$prod->Product_name}}</th>
+     <th>{{$prod->price}}</th>
+     <th>{{$prod->image}}</th>
+     <td><a href="/delete/{{$prod->id}}"><button>delete</button></a></td>
 
-<td><a href="/delete/{{$row->id}}"><button>delete</button></a></td>
-</tr>
-  @endforeach
+   </tr>
+   @endforeach
 </tbody>
 </table>
 </div>

@@ -5,13 +5,13 @@ use App\product;
 use Illuminate\Http\Request;
 use Illuminate\support\facades\url;
 use Illuminate\support\facades\DB;
-
+use App\products;
 class ProductController extends Controller
 {
     public function index()
     {
         
-        return view ('AdminPages.delete_medicine');
+        return view ('AdminPages.delete');
     }
 
     public function store(Request $request)
@@ -22,13 +22,7 @@ class ProductController extends Controller
         DB::insert('insert into products (id,Product_name,price,image) values (?,?,?,?)',[null,$Product_name,$price,$image]);
 
     }
-
-        public function show()
-      {
-        $products = DB::select('select * from products');
-         return view('/AdminPages.delete',['products'=>$products]);
-    }
-
+    
      public function delete($id)
     {
         DB::delete('delete from products where id = ?',[$id]);

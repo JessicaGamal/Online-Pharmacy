@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use DB;
 use App\Illuminate\Requests;
 use App\Http\Controllers\Controller;
-
+use App\products;
 class productscontroller extends Controller
 {
      public function indeex(){

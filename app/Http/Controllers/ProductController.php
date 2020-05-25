@@ -20,6 +20,7 @@ class ProductController extends Controller
         $price = $request->input('price');
         $image = $request->input('image');
         DB::insert('insert into products (id,Product_name,price,image) values (?,?,?,?)',[null,$Product_name,$price,$image]);
+        return redirect ('AdminPages.delete');
 
     }
     

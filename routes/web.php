@@ -13,13 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//Route::get('/', function () {
-  //  return view('FirstHome'); });
 
-Route::get ("/delete/{id}","productscontroller@delete");
-Route::get("AdminPages.delete","productscontroller@indeex");
+
+
 Route::get('/', function () {
-    return view('AdminPages.delete'); });
+    return view('FirstHome'); });
 Route::get('register', function()
 {
     return view('register'); });
@@ -49,6 +47,8 @@ Route::get('home1', function()
 
 Route::post('/product','ProductController@store');
 Route::get('/product','ProductController@index');
+Route::get ("/delete/{id}","productscontroller@delete");
+Route::get("AdminPages.delete","productscontroller@indeex");
 
 
 

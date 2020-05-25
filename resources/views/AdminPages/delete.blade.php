@@ -16,7 +16,7 @@
 
 <th>Product_name</th>
 <th>price</th>
-<th>image</th>
+
 <th>DELETE_BUTTON</th>
 </tr>
 </thead>
@@ -25,7 +25,7 @@
 	<tr>
 	<th>{{$prod->Product_name}}</th>
      <th>{{$prod->price}}</th>
-     <th>{{$prod->image}}</th>
+     
      <td><a href="/delete/{{$prod->id}}"><button>delete</button></a></td>
 
    </tr>

@@ -19,6 +19,7 @@ class ProductController extends Controller
         $Product_name = $request->input('Product_name');
         $price = $request->input('price');
         $image = $request->input('image');
+
         DB::insert('insert into products (id,Product_name,price,image) values (?,?,?,?)',[null,$Product_name,$price,$image]);
         return redirect ('AdminPages.delete');
 
@@ -29,6 +30,7 @@ class ProductController extends Controller
         DB::delete('delete from products where id = ?',[$id]);
         return redirect('delete_medicine')->with('success','datadelete');
     }
+
 
         
 }

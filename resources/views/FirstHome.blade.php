@@ -20,7 +20,7 @@
 						<ul>
 							<li><a href="home1">Home</a></li>							
 							<li><a href="about">about us</a></li>
-							<li><a href="contact">Contact us</a></li>
+							
 									
 								
 						

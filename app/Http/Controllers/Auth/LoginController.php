@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
+use Illuminate\support\facades\DB;
 use User;
 class LoginController extends Controller
 {
@@ -36,7 +37,7 @@ class LoginController extends Controller
         return view ('AdminPages.add_medicine');
       }
       else {
-        return view ('UserPages.index');
+        return view ('UserPages.index',['products'=>DB::select('select * from products')]);
       }
     }
 

@@ -71,7 +71,7 @@
             <a href="shop-single.html"><img src ="{{asset($p->image)}}" /></a>
             <h3 class="text-dark"><a href="shop-single.html">{{$p->Product_name}}</a></h3>
             <p class="price">{{$p->price}}</p>
-            <p><a href="cart.html" class="buy-now btn btn-sm height-auto px-4 py-3 btn-primary">ADD TO CART</a></p>
+            <p><a href="/AddToCart/{{$p->id}}" class="buy-now btn btn-sm height-auto px-4 py-3 btn-primary">ADD TO CART</a></p>
           </div>
           
                  @endforeach

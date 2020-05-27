@@ -8,6 +8,7 @@ use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
 use Illuminate\support\facades\DB;
 use User;
+use App\Cart ;
 class LoginController extends Controller
 {
     /*
@@ -55,7 +56,7 @@ class LoginController extends Controller
         $this->guard()->logout();
 
         $request->session()->invalidate();
-
+        Cart::truncate() ;
         return redirect('/login');
     }
 }

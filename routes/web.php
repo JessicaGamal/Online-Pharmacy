@@ -50,6 +50,7 @@ Route::get('/product','ProductController@index');
 Route::get ("/delete/{id}","ProductController@delete");
 Route::get("AdminPages.delete","ProductController@LoadDb");
 Route::get("UserPages.index","ProductController@InsertToDb");
+Route::get("/AddToCart/{ProdId}",'CartController@store');
 
 
 

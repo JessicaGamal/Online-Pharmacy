@@ -17,6 +17,7 @@ class CreateCartsTable extends Migration
             $table->id();
             $table->String('Prod_Name');
             $table->String('Prod_Price');
+            $table->String('Prod_img');
             $table->timestamps();
 
         });

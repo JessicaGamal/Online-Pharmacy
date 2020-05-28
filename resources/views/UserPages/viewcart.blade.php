@@ -5,10 +5,10 @@
       background:url(bg_1.jpg  )no-repeat ;
       background-size: cover;
 }
-table {  
- 
+table {
+
     font-family: Helvetica, Arial, sans-serif; /* Nicer font */
-    width: 640px; 
+    width: 640px;
     padding:50px;
     margin: 150px;
      box-shadow:0 8px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
@@ -18,13 +18,13 @@ table {
 
 td, th {  height: 30px; } /* Make cells a bit taller */
 
-th {  
+th {
     text-align: center;
     font-weight: bold; /* Make sure they're bold */
 }
 
-td {  
-    
+td {
+
     text-align: center; /* Center our text */
 }
 
@@ -41,23 +41,24 @@ td {
     color: white;
    }
 </style>
-<table>  
-<tr> 
- 
- 
+<table>
+<tr>
+
+
     <th>PRODUC_TNAME</th>
     <th>PRICE</th>
     <th>DELETE</th>
-</tr> 
+</tr>
 
-<tr>  
+<tr>
     @foreach($Cart as $prod)
     <td>{{$prod->Prod_Name}}</td>
     <td>{{$prod->Prod_Price}}</td>
+    <td> <img  height="150" width="150" src ="{{asset('product/'.$prod->Prod_img)}}" /></td>
     <td><a href=""><button class="button">DELETE</button></a></td>
     <td></td>
-</tr> 
- @endforeach  
+</tr>
+ @endforeach
 
 </table>
 @endsection

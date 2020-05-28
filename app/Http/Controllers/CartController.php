@@ -12,22 +12,23 @@ class CartController extends Controller
 {
     public function index()
     {
-        
+
         return view ('UserPages.index');
     }
     public function store($ProdId)
-    {  
-       $products=products::whereid($ProdId)->first(); 
-       
+    {
+       $products=products::whereid($ProdId)->first();
+
 
       $Carts = new Cart([
-        
+
         'Prod_Name' => $products->Product_name,
          'Prod_Price' => $products->price,
+         'Prod_img' => $products->image,
        ]);
        $Carts->save();
 
-       
+
         return redirect ('UserPages.index');
     }
 

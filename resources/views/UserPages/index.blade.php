@@ -1,6 +1,8 @@
 @extends('layouts.app')
 @section('content')
 
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,6 +26,7 @@
   <link rel="stylesheet" href="css/style.css">
 
 </head>
+
 
 <body>
 

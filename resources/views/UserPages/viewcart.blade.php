@@ -55,7 +55,7 @@ td {
     <td>{{$prod->Prod_Name}}</td>
     <td>{{$prod->Prod_Price}}</td>
     <td> <img  height="150" width="150" src ="{{asset('product/'.$prod->Prod_img)}}" /></td>
-    <td><a href=""><button class="button">DELETE</button></a></td>
+    <td><a href="/delete/{{$prod->id}}"><button class="button">DELETE</button></a></td>
     <td></td>
 </tr>
  @endforeach

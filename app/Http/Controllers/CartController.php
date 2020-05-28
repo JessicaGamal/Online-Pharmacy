@@ -38,4 +38,9 @@ class CartController extends Controller
         return view('UserPages.viewcart',['Cart'=>$Cart]);
 
     }
+    public function delete($id)
+   {
+       DB::delete('delete from carts where id = ?',[$id]);
+       return view('UserPages.viewcart',['Cart' => Db::select('select  * from carts' )]);
+   }
 }

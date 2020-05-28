@@ -53,6 +53,7 @@ Route::get("UserPages.index","ProductController@InsertToDb");
 Route::get("/AddToCart/{ProdId}",'CartController@store');
 Route::get('/AdminPages.delete','ProductController@LoadDb');
 Route::get('/UserPages.viewcart','CartController@viewcart');
+Route::get ("/delete/{id}","CartController@delete");
 
 
 

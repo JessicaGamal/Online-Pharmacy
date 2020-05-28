@@ -28,6 +28,13 @@ class CartController extends Controller
        $Carts->save();
 
        
-        return redirect ('AdminPages.delete');
+        return redirect ('UserPages.index');
+    }
+
+    public function viewcart()
+    {
+        $Cart = DB::select('select * from carts');
+        return view('UserPages.viewcart',['Cart'=>$Cart]);
+
     }
 }

@@ -20,6 +20,7 @@
 <th>DELETE_BUTTON</th>
 </tr>
 </thead>
+
 <tbody>
 	@foreach($products as $prod)
 	<tr>

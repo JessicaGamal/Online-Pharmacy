@@ -14,34 +14,34 @@ class productsTableSeeder extends Seeder
     {
          DB::table('products')->insert([
         	[
-        	'Product_name' => 'Bioderma',
-        	'price' => '55.00',
-        	'image' => 'images/product_01.png'
+            'Product_name' => 'Bioderma',
+            'price' => '55.00',
+            'image' => '1590532411.png'
             ],
             [
              'Product_name' => 'Chanca Piedra',
-        	 'price' => '70.00',
-        	 'image' => 'images/product_02.png'
+             'price' => '70.00',
+             'image' => '1590532478.png'
             ],
             [
              'Product_name' => 'Umcka Cold Care',
-        	 'price' => '120.00',
-        	 'image' => 'images/product_03.png'
+             'price' => '120.00',
+             'image' => '1590532536.png'
             ],
             [
              'Product_name' => 'Cetyl Pure',
-        	 'price' => '145.00',
-        	 'image' => 'images/product_04.png'
+             'price' => '145.00',
+             'image' => '1590532599.png'
             ],
             [
              'Product_name' => 'CLA Core',
-        	 'price' => '38.00',
-        	 'image' => 'images/product_05.png'
+             'price' => '38.00',
+             'image' => '1590532616.png'
             ],
             [
              'Product_name' => 'Poo Pourri',
-        	 'price' => '89.00',
-        	 'image' => 'images/product_06.png'
+             'price' => '89.00',
+             'image' => '1590532579.png'
             ]
      ]);
     }

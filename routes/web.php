@@ -15,9 +15,11 @@ use Illuminate\Support\Facades\Route;
 
 
 
-
-Route::get('/', function () {
+Route::get('/', function()
+{
     return view('FirstHome'); });
+
+
 Route::get('register', function()
 {
     return view('register'); });
@@ -45,12 +47,12 @@ Route::get('home1', function()
   Auth::Routes();
   Route::get('/home', 'HomeController@index')->name('home');
 
-Route::post('/product','ProductController@store');
-Route::get('/product','ProductController@index');
+Route::post('/AdminPages.delete','ProductController@store');
 Route::get ("/delete/{id}","ProductController@delete");
-Route::get("AdminPages.delete","ProductController@LoadDb");
 Route::get("UserPages.index","ProductController@InsertToDb");
 Route::get("/AddToCart/{ProdId}",'CartController@store');
+Route::get('/AdminPages.delete','ProductController@LoadDb');
+Route::get('/UserPages.viewcart','CartController@viewcart');
 
 
 

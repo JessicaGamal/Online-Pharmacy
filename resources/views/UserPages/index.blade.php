@@ -33,17 +33,6 @@
     <div class="site-navbar py-2">
 
       
-
-      <div class="container">
-        <div class="d-flex align-items-center justify-content-between">
-          <div class="logo">
-            <div class="site-logo">
-              <a href="index.html" class="js-logo-clone">Caring Pharmacy</a>
-            </div>
-          </div>
-      </div>
-    </div>
-
     <div class="site-blocks-cover" style="background-image: url('images/hero_1.jpg');">
       <div class="container">
         <div class="row">
@@ -68,7 +57,7 @@
        @foreach($products as $p)
           <div class="col-sm-6 col-lg-4 text-center item mb-4">
             <span class="tag">Sale</span>
-            <a href="shop-single.html"><img src ="{{asset($p->image)}}" /></a>
+            <a href="shop-single.html"><img src ="{{asset('product/'.$p->image)}}" /></a>
             <h3 class="text-dark"><a href="shop-single.html">{{$p->Product_name}}</a></h3>
             <p class="price">{{$p->price}}</p>
             <p><a href="/AddToCart/{{$p->id}}" class="buy-now btn btn-sm height-auto px-4 py-3 btn-primary">ADD TO CART</a></p>

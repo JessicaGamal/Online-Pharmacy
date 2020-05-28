@@ -19,7 +19,7 @@
             <div class="col-lg-3"></div>
             <div class="col-lg-6">
                 <div id="ui">
-<form action="/product" method="Post">
+<form action="/AdminPages.delete" method="Post" enctype="multipart/form-data">
     {{csrf_field()}}
     
     <div class="row">

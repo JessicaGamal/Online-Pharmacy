@@ -9,31 +9,36 @@ use Illuminate\support\facades\DB;
 use App\products;
 class ProductController extends Controller
 {
-    public function index()
-    {
-        
-        return view ('AdminPages.delete');
-    }
+    
 
-    public function InsertToDb()
-    {
-        $products = DB::select('select * from products');
-        return view('UserPages.index',['products'=>$products]);
-    }
+     public function store(Request $request)
+    {  $products = new products();
+        $products->Product_name = $request->input('Product_name');
+        $products->price = $request->input('price');
 
-    public function store(Request $request)
-    {
-        $Product_name = $request->input('Product_name');
-        $price = $request->input('price');
-        $image = $request->input('image');
+        if($request->hasfile('image')){
 
-        DB::insert('insert into products (id,Product_name,price,image) values (?,?,?,?)',[null,$Product_name,$price,$image]);
+            $file =$request->file('image');
+            $extension = $file->getClientOriginalExtension();
+            $filename= time() . '.' . $extension;
+            $file->move('product/' ,$filename);
+            $products->image =$filename;
+        } 
+                
+         $products->save();
         return redirect ('AdminPages.delete');
     }
+          
     public function LoadDb()
     {
         $products = DB::select('select * from products');
         return view('AdminPages.delete',['products'=>$products]);
+
+    }
+     public function InsertToDb()
+    {
+        $products = DB::select('select * from products');
+        return view('UserPages.index',['products'=>$products]);
     }
     
      public function delete($id)

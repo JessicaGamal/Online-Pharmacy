@@ -4,6 +4,7 @@ namespace App\Exceptions;
 
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Throwable;
+use Illuminate\support\facades\DB;
 
 class Handler extends ExceptionHandler
 {
@@ -48,8 +49,17 @@ class Handler extends ExceptionHandler
      *
      * @throws \Throwable
      */
-    public function render($request, Throwable $exception)
-    {
-        return parent::render($request, $exception);
-    }
+     public function render($request, Throwable $exception )
+     {
+       if ($this -> isHttpException($exception))
+       {
+         $code = $exception->getStatuscode();
+         if ($code == '404')
+          {
+           return redirect('UserPages.index');
+          }
+          //['products'=>DB::select('select * from products')]
+       }
+         return parent::render($request, $exception);
+     }
 }

@@ -44,9 +44,8 @@ Route::get('home1', function()
 {
     return view('FirstHome'); });
 
-  Auth::Routes();
-  Route::get('/home', 'HomeController@index')->name('home');
-
+ //Auth::Routes();
+Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/AdminPages.delete','ProductController@store');
 Route::get ("/delete/{id}","ProductController@delete");
 Route::get("UserPages.index","ProductController@InsertToDb");
@@ -56,20 +55,11 @@ Route::get('/UserPages.viewcart','CartController@viewcart');
 Route::get ("/delete/{id}","CartController@delete");
 
 
+// Authentication Routes...
+Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
+Route::post('login', 'Auth\LoginController@login');
+Route::post('logout', 'Auth\LoginController@logout')->name('logout');
 
-
-    /*
-
-//Login Routes
-Route::get('login', 'Auth\loginController@showLoginForm')->name('login');
-Route::post('login', 'Auth\loginController@login');
-Route::get('logout', 'Auth\LoginController@logout')->name('logout');
-//Register Routes
+// Registration Routes...
 Route::get('register', 'Auth\RegisterController@showRegistrationForm')->name('register');
 Route::post('register', 'Auth\RegisterController@register');
-
-//Admin midlleware
-Route::group(['Middleware' => ['checkadmin']] ,function () {
-      //Admin Functions will be here
-});
-*/

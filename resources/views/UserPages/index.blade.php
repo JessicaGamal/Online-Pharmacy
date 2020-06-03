@@ -60,8 +60,8 @@
        @foreach($products as $p)
           <div class="col-sm-6 col-lg-4 text-center item mb-4">
             <span class="tag">Sale</span>
-            <a href="shop-single.html"><img  height="250" width="250" src ="{{asset('product/'.$p->image)}}" /></a>
-            <h3 class="text-dark"><a href="shop-single.html">{{$p->Product_name}}</a></h3>
+            <a ><img  height="250" width="250" src ="{{asset('product/'.$p->image)}}" /></a>
+            <h3 class="text-dark"><a >{{$p->Product_name}}</a></h3>
             <p class="price">{{$p->price}}</p>
             <p><a href="/AddToCart/{{$p->id}}" class="buy-now btn btn-sm height-auto px-4 py-3 btn-primary">ADD TO CART</a></p>
           </div>
@@ -98,15 +98,8 @@
     </footer>
   </div>
 
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/jquery-ui.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-
-  <script src="js/main.js"></script>
+  <script type="text/javascript" src="Scripts/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
 
 </body>
 

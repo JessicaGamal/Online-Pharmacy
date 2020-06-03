@@ -29,11 +29,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-
-
-
-
-    protected  function Authenticated ( Request $request , $user){
+     protected  function Authenticated ( Request $request , $user){
       if ( $user->admin ==1 ){
         return view ('AdminPages.add_medicine');
       }

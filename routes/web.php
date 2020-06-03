@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\support\facades\DB;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,7 +30,7 @@ Route::get('login', function()
 
 Route::get('about', function()
 {
-    return view('about'); });
+    return view('about'); })->middleware('Isuser');
 
 Route::get('contact', function()
 {
@@ -40,19 +40,29 @@ Route::get('FirstHome', function()
 {
     return view('FirstHome'); });
 
-Route::get('home1', function()
-{
-    return view('FirstHome'); });
 
  //Auth::Routes();
-Route::get('/home', 'HomeController@index')->name('home');
-Route::post('/AdminPages.delete','ProductController@store');
-Route::get ("/delete/{id}","ProductController@delete");
-Route::get("UserPages.index","ProductController@InsertToDb");
-Route::get("/AddToCart/{ProdId}",'CartController@store');
-Route::get('/AdminPages.delete','ProductController@LoadDb');
-Route::get('/UserPages.viewcart','CartController@viewcart');
-Route::get ("/delete/{id}","CartController@delete");
+
+ Route::group(['middleware' => 'auth'], function () {
+   Route::post('/AdminPages.delete','ProductController@store')->middleware('admin');
+   Route::get ("/delete/{id}","ProductController@delete")->middleware('admin');
+   Route::get("UserPages.index","ProductController@InsertToDb")->middleware('Isuser');
+   Route::get("/AddToCart/{ProdId}",'CartController@store')->middleware('Isuser');
+   Route::get('/AdminPages.delete','ProductController@LoadDb')->middleware('admin') ;
+   Route::get('/UserPages.viewcart','CartController@viewcart')->middleware('Isuser');
+   Route::get ("/delete/{id}","CartController@delete")->middleware('Isuser');
+   Route::get('UserPages.Index', function()
+   {
+       return view('UserPages.Index',['products'=>DB::select('select * from products')]); })->middleware('Isuser');
+  Route::get('AdminPages/add_medicine', function()
+       {
+           return view('AdminPages/add_medicine'); })->middleware('admin');
+
+
+});
+
+
+
 
 
 // Authentication Routes...

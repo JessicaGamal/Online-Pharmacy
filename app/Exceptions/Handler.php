@@ -49,6 +49,14 @@ class Handler extends ExceptionHandler
      *
      * @throws \Throwable
      */
+
+
+     public function render($request, Throwable $exception)
+     {
+         return parent::render($request, $exception);
+     }
+
+     /*
      public function render($request, Throwable $exception )
      {
        if ($this -> isHttpException($exception))
@@ -62,4 +70,5 @@ class Handler extends ExceptionHandler
        }
          return parent::render($request, $exception);
      }
+     */
 }

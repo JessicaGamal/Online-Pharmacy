@@ -23,7 +23,7 @@
 
   <link rel="stylesheet" href="css/aos.css">
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style4.css">
 
 </head>
 

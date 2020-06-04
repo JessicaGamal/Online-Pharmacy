@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.AdminNavbar')
 
 @section('content')
 <title>Registration</title>

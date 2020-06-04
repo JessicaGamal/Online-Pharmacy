@@ -28,14 +28,7 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
-                          <a class="navbar-brand" href="{{ url('/about') }}">
-                                 ABOUT US
-                </a>
-                 <a class="navbar-brand" href="{{ url('/UserPages.viewcart') }}">
-                              CART
-                </a>
-                    </ul>
+                  
                     
 
                     <!-- Right Side Of Navbar -->

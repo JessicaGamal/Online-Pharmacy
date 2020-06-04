@@ -18,7 +18,8 @@
 					<h1>CARING PHARMACY</h1>
 					<nav id="nav">
 						<ul>
-							<li><a href="home1">Home</a></li>							
+							<li><a href="register">register</a></li>							
+							<li><a href="login">Login</a></li>							
 							<li><a href="about">about us</a></li>
 							
 									

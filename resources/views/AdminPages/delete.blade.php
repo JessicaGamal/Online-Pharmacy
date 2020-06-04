@@ -1,4 +1,4 @@
-   @extends('layouts.app')
+   @extends('layouts.AdminNavbar')
 @section('content')
 <head><head>
     <link href="delete.css" rel="stylesheet">
@@ -27,7 +27,7 @@
 	<th>{{$prod->Product_name}}</th>
      <th>{{$prod->price}}</th>
      
-     <td><a href="/delete/{{$prod->id}}"><button>delete</button></a></td>
+     <td><a href="/deleteproduct/{{$prod->id}}"><button>delete</button></a></td>
 
    </tr>
    @endforeach

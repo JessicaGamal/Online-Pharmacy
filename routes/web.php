@@ -30,11 +30,11 @@ Route::get('login', function()
 
 Route::get('about', function()
 {
-    return view('about'); })->middleware('Isuser');
+    return view('about'); });
 
-Route::get('contact', function()
+Route::get('home1', function()
 {
-    return view('contact'); });
+    return view('FirstHome'); });
 
 Route::get('FirstHome', function()
 {
@@ -45,7 +45,7 @@ Route::get('FirstHome', function()
 
  Route::group(['middleware' => 'auth'], function () {
    Route::post('/AdminPages.delete','ProductController@store')->middleware('admin');
-   Route::get ("/delete/{id}","ProductController@delete")->middleware('admin');
+   Route::get ("/deleteproduct/{id}","ProductController@delete")->middleware('admin');
    Route::get("UserPages.index","ProductController@InsertToDb")->middleware('Isuser');
    Route::get("/AddToCart/{ProdId}",'CartController@store')->middleware('Isuser');
    Route::get('/AdminPages.delete','ProductController@LoadDb')->middleware('admin') ;

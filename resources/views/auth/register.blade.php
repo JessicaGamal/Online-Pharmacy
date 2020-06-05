@@ -68,7 +68,7 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <label>Mobile</label>
-                                <input id="Mobile" type="number" class="form-control @error('Mobile') is-invalid @enderror" name="Mobile" value="{{ old('Mobile') }}" required autocomplete="Mobile" placeholder="Enter Your Mobile *11 number at least*">
+                                <input id="Mobile" type="number" class="form-control @error('Mobile') is-invalid @enderror" name="Mobile" value="{{ old('Mobile') }}" required autocomplete="Mobile" placeholder="Enter Your Mobile *11 number*">
 
                                 @error('Mobile')
                                     <span class="badge badge-primary" role="alert">
@@ -80,7 +80,7 @@
 
                             <div class="col-lg-6">
                                 <label>Phone Number</label>
-                               <input id="Phone" type="number" class="form-control @error('Phone') is-invalid @enderror" name="Phone" value="{{ old('Phone') }}"  placeholder="Enter Your Mobile *10 number at least*">
+                               <input id="Phone" type="number" class="form-control @error('Phone') is-invalid @enderror" name="Phone" value="{{ old('Phone') }}"  placeholder="Enter Your Mobile *10 number*">
                                @error('Phone')
                                   <span class="badge badge-primary" role="alert">
                                       <strong>{{ $message }}</strong>
